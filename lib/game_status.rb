@@ -41,7 +41,7 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board)
+  if won?(board)                      #if player won...
     return board[won?(board)[0]]      #return winning board combo
   else
     return nil
