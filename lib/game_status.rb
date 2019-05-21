@@ -42,7 +42,7 @@ end
 
 def winner(board)
   if won?(board)                      #if player won...
-    return board[won?(board)[0]]      #return winning board combo
+    return board[won?(board)[0]]      #return winning board combo (returns X when X wins / O when O wins)
   else
     return nil
   end
