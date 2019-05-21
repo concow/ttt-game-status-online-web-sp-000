@@ -40,8 +40,10 @@ def over?(board)
     won?(board) || draw?(board) || full?(board)
 end
 
-def winner?(board)
-  if winning_combo == win?(board)
-    board[winning_combo.first]
+def winner(board)
+  if won?(board)
+    return board[won?(board)[0]]
+  else
+    return nil
   end
 end
